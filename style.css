@@ -1,39 +1,116 @@
 /* GENERAL */
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  height: 100vh;
-  background: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background: #f1f1f1;
 }
 /* NAVIGATION */
 .navbar-brand {
-  font-size: 25px;
-  font-family: Kaushan script, serif;
+    font-size: 25px;
+    font-family: Kaushan script, serif;
 }
 .navbar-collapse a {
-  font-size: 20px;
+    font-size: 20px;
 }
 /* HEADER */
 
 header {
-  background: url("ressources/headerImg.jpg");
-  background-size: cover;
-  /* background-repeat: no-repeat; */
-  /* background-position: right; */
-  height: 80vh;
+    background: url("ressources/headerImg.jpg");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-position: right; */
+    height: 80vh;
 }
 .text-intro {
-  padding-top: 300px;
-  padding-bottom: 200px;
+    padding-top: 300px;
+    padding-bottom: 200px;
 }
 .preTxt {
-  font-size: 40px;
+    font-size: 40px;
 }
 h1 {
-  font-size: 90px;
-  font-family: sans-serif;
-  font-weight: 700;
-  color: #fff;
+    font-size: 90px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* TROIS ICONES */
+
+#home-icons {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* CALL TO ACTION  */
+
+#start {
+    position: relative;
+    min-height: 200px;
+    background: url(ressources/start.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+#start h2 {
+    font-size: 40px;
+    color: #f1f1f1;
+}
+
+/* CLIENTS */
+
+#clients {
+    padding-bottom: 100px;
+}
+
+#clients img:nth-child(1) {
+    width: 200px;
+    height: 200px;
+}
+
+#clients img {
+    margin-top: -50px;
+    filter: drop-shadow(0 0 0.75rem #333);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 60vh;
+    }
+    .text-intro {
+        padding-top: 200px;
+    }
+    .preTxt {
+        font-size: 30px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .preTxt {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 39px;
+    }
+    .text-intro a {
+        transform: scale(0.8);
+    }
+    #home-icons {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #txtLaptop {
+        padding-bottom: 30px;
+    }
+    #clients {
+        padding-bottom: 50px;
+    }
 }
